@@ -170,7 +170,7 @@ export default {
 
       let echarts1Option = {};
       const { orderData } = data.data;
-      console.log({orderData})
+      // console.log({orderData})
       const xAxis = Object.keys(orderData.data[0]);
       const xAxisData = {
         data: xAxis,
