@@ -1,10 +1,10 @@
 <template>
     <div>
-        <el-container>
-            <el-aside width=auto>
+        <el-container class="operation-wrapper">
+            <el-aside width="auto">
                 <common-aside/>
             </el-aside>
-            <el-container>
+            <el-container class="main">
                 <el-header>
                     <common-header></common-header>
                 </el-header>
@@ -37,8 +37,22 @@ export default {
 }
 </script>
 
-<style scoped>
-.el-header{
+<style lang="less" scoped>
+.operation-wrapper {
+  width: 100% !important;
+  .el-header {
+    // height: 100px;
     padding: 0;
+  }
+  .el-aside {
+    
+    height: 100vh;
+    overflow-y: auto;
+  }
+  main {
+    padding: 0px 16px !important;
+    height: calc(100vh - 200px); 
+    overflow-y: auto;
+  }
 }
 </style>
